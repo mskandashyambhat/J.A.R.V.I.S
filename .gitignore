@@ -1,0 +1,154 @@
+# JARVIS - Git Ignore File
+# Security-focused gitignore to prevent accidental exposure of sensitive data
+
+# Environment variables and configuration
+.env
+.env.local
+.env.production
+.env.development
+config.json
+settings.json
+
+# User data and credentials (NEVER commit these)
+.jarvis/
+jarvis_data/
+email_config/
+face_data/
+*.enc
+credentials.*
+master_key.*
+
+# Logs and temporary files
+*.log
+*.log.*
+jarvis.log
+activity.log
+debug.log
+
+# Face recognition data
+trainer/
+samples/
+*.yml
+haarcascade_*.xml
+face_samples/
+
+# Email and personal data
+contacts.json
+email_cache/
+sent_emails/
+
+# Screenshots and media files
+screenshots/
+JARVIS_Screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.avi
+*.wav
+*.mp3
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+jarvis_env/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Temporary directories
+tmp/
+temp/
+cache/
+
+# API keys and secrets (extra protection)
+*api_key*
+*secret*
+*token*
+*password*
+apikey.*
+secrets.*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificate files
+*.pem
+*.key
+*.crt
+*.cert
+
+# Compiled files
+*.dll
+*.exe
+*.msi
+
+# Documentation build
+docs/_build/
+
+# Local configuration overrides
+local_config.*
+user_settings.*

@@ -1,0 +1,57 @@
+# JARVIS - Secure Voice Assistant Requirements
+# All dependencies are carefully selected for security and functionality
+
+# Core speech and audio processing
+pyttsx3>=2.90
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.11
+
+# Computer vision and face recognition (optional)
+opencv-contrib-python>=4.8.0
+numpy>=1.21.0
+
+# Web and HTTP requests
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+
+# System utilities
+psutil>=5.9.0
+pyautogui>=0.9.54
+
+# Encryption and security
+cryptography>=41.0.0
+
+# Location and geocoding
+geocoder>=1.38.1
+
+# Entertainment and utilities
+pyjokes>=0.6.0
+wikipedia>=1.4.0
+
+# Development and optional dependencies
+# Note: Some packages may require system-specific installation
+
+# For macOS users:
+# brew install portaudio (required for pyaudio)
+# brew install tesseract (optional, for OCR functionality)
+
+# For Linux users:
+# sudo apt-get install python3-pyaudio
+# sudo apt-get install portaudio19-dev
+# sudo apt-get install tesseract-ocr (optional)
+
+# For Windows users:
+# pip install pipwin
+# pipwin install pyaudio
+
+# Email functionality
+# No additional packages needed - uses built-in smtplib
+
+# News API integration
+# No additional packages needed - uses requests
+
+# YouTube integration
+# No additional packages needed - uses webbrowser
+
+# Dictionary functionality  
+# Uses free APIs - no API key required for basic functionality
